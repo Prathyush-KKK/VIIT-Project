@@ -1030,5 +1030,14 @@ svg.bi{
 .inner_page .contact {
      margin-top: 90px;
 }
-
+#article{
+     color: white;
+     font-size: 28px;
+}
+#article.hover{
+     color: hotpink;
+}
+#para{
+     font-size: 23px;
+}
 
