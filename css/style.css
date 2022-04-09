@@ -1030,7 +1030,10 @@ svg.bi{
 .inner_page .contact {
      margin-top: 90px;
 }
-
+#article{
+     color: white;
+     size: 50px;
+}
 
 
 /* chatbot */
