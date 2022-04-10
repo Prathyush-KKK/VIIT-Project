@@ -1032,9 +1032,20 @@ svg.bi{
 }
 #article{
      color: white;
+/* kash */
+     font-size: 28px;
+}
+#article.hover{
+     color: hotpink;
+}
+#para{
+     font-size: 23px;
+}
+
      size: 50px;
 }
 
+/* main */
 
 /* chatbot */
 #center-text {          
