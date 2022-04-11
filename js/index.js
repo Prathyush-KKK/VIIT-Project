@@ -62,7 +62,17 @@ function exploreSwitch() {
     document.getElementById('fake-header').style.display = "block";
 
 }
+function saleNFT() {
+    document.getElementById('popup-box').style.display = "block";
+    document.getElementById('fake-header').style.opacity = "0.5";    
+    document.getElementById('parent-div1').style.opacity = "0.5";  
+}
 
+function salepopupRemove() {
+    document.getElementById('popup-box').style.display = "none";
+    document.getElementById('fake-header').style.opacity = "1";    
+    document.getElementById('parent-div1').style.opacity = "1";    
+}
 // function fixRemove() {
 //     document.getElementById('desc-div').style.display = "none";
 // }

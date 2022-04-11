@@ -32,6 +32,18 @@
 
 <body class="main-layout" >
 
+    <div class="popup-box" id="popup-box">
+        <nav>
+            <h1>Your Item is now listed for sale</h1>
+            <ul class="popup-nft-list">
+                <li onclick="salepopupRemove()"><span>X</span></li>
+            </ul>
+        </nav>
+        <div class="photo-class">
+        <img src="./images/nft.jpeg" alt="image" class="nft-img">
+        </div>
+    </div>
+
     <header id="fake-header">
         <!-- header inner -->
         <div class="head-top">
@@ -112,7 +124,7 @@
                 <p>2.5%</p>
             </div>
     
-            <button class="upload-btn">Upload</button>
+            <button onclick="saleNFT()" class="upload-btn">Upload</button>
             </div>
     
             </div>
