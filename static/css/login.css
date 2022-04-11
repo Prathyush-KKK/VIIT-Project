@@ -1,0 +1,104 @@
+html{
+    height: 100%;
+
+}
+body{
+    background-image: url("../images/card-wp-2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.fa-solid {
+    padding-right: 1rem;
+    color: white;
+}
+
+.nav-heading {
+    font-size: 1.5rem;
+    padding-top: 1rem;
+    padding-left: 5rem;
+    font-family: Montserrat;
+    transition: 0.3s;
+    color: white;
+}
+
+.nav-heading:hover {
+    color: rgb(240, 16, 221);
+    cursor: pointer;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    padding-top: 1rem;
+    padding-right: 5rem;
+    font-family: Montserrat;
+    color: white;
+}
+
+.nav-content {
+    padding: 1rem;
+    transition: 0.3s;
+}
+
+.nav-content:hover {
+    color: rgb(240, 16, 221);
+    cursor: pointer;
+}
+
+.header{
+    padding: 5px 120px;
+    width: 150px;
+    height: 70px;
+    background-color: #236B8E; 
+}
+
+.border{
+    padding: 80px 50px;
+    width: 400px;
+    height: 450px;
+    border: 1px solid #236B8E;
+    background-color: none;
+    backdrop-filter: blur(1rem);
+}
+
+.btn {
+    padding: 10px 40px;
+    background-color: #236B8E; 
+    color: #FFFFFF;
+    font-style: oblique;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.textbox{
+    padding: 10px 40px;
+    background-color: #f6f6f6; 
+    color: #100f0f;
+    border-radius: 10px;
+}
+      
+::placeholder {
+    color: #0a0a0a;
+    opacity: 1;
+    font-style: oblique;
+    font-weight: bold;
+}
+
+.word{
+    color: #FFFFFF;
+    font-style: oblique;
+    font-weight: bold;
+}
+
+.bottom{
+    color: #eaeff1;
+    font-style: oblique;
+    font-weight: bold;
+}
