@@ -42,7 +42,54 @@ body {
 .parent-div1 {
      display: none;
 }
-
+.popup-box {
+     z-index: 45;
+     background-color: white;
+     color: black;
+     display: none;
+     position: fixed;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%,-50%);
+     width: 40rem;
+     height: 25rem;
+     /* border: 1px solid black; */
+     box-shadow: 0px 1px 2px 0px rgb(60 64 67 / 30%), 0px 2px 6px 2px rgb(60 64 67 / 15%);
+ }
+ nav {
+     height: 4rem;
+     box-shadow: 0px 1px 2px 0px rgb(60 64 67 / 30%), 0px 2px 6px 2px rgb(60 64 67 / 15%);
+     display: flex;
+     justify-content: center;
+     color: black;
+     text-align: center;
+     align-items: center;
+     font-family: Poppins;
+     font-weight: bold;
+ }
+ nav h1{
+     color: black;
+}
+ .photo-class {
+     display: flex;
+     color: black;
+     justify-content: center;
+     /* align-items: center; */
+     padding-top: 3rem;
+ }
+ .nft-img {
+     width: 20rem;
+     height: 15rem;
+     color: black;
+ }
+ .popup-nft-list{
+     list-style: none;
+     display: flex;
+     position: absolute;
+     left: 88%;
+     font-size: 1.2rem;
+     cursor: pointer;
+ }
 .nft-form {
      width: 60%;
      padding-left: 2rem;
