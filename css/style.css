@@ -33,6 +33,167 @@ body {
      background-repeat: no-repeat;
 }
 
+#fake-header {
+     display: none;
+}
+
+/* form-nft */
+
+.parent-div1 {
+     display: none;
+}
+
+.nft-form {
+     width: 60%;
+     padding-left: 2rem;
+ }
+ 
+ .image-upload{
+     width: 15rem;
+     height: 15rem;
+     padding: 1rem;
+     border: 2px dashed black;
+ }
+ 
+ .fixed-price {
+     display: flex;
+     width: 85%;
+     border: 1px solid rgb(197, 194, 194);
+     border-radius: 6px;
+     margin: 5px 0;
+     text-decoration-color: black;
+ }
+ 
+ .price-rupee {
+     padding: 1.2rem;
+     text-align: center;
+     width: 100%;
+     border-right: 1px solid black;
+     cursor: pointer;
+ }
+ 
+ .price-rupee:hover {
+     background-color: rgb(125, 195, 233);
+     text-emphasis-color: black;
+ }
+ 
+ .fixed-rupee {
+     background-color: rgb(125, 195, 233);
+     text-emphasis-color:black;
+ }
+ 
+ .clock-auction {
+     border-right: none;
+ }
+ 
+ /* .price-rupee p{
+     border-right: 1px solid black;
+ } */
+ 
+ .price-para {
+     font-weight: bold;
+     padding: 5px 0;
+ }
+ 
+ .eth-select {
+     padding: 0.4rem 2.8rem;
+     background-color: rgb(125, 195, 233);
+ }
+ 
+ .number-inp {
+     padding: 0.4rem 11.5rem;
+     border: 1px solid rgb(197, 194, 194);
+ }
+ 
+ .duration-para {
+     padding-top: 2rem;
+     padding-bottom: 0.7rem;
+ }
+ 
+ .data-inp {
+     width: 85%;
+     padding: 0.4rem 0;
+     border: 2px solid rgb(224, 224, 224);
+     border-radius: 7px;
+     margin-bottom: 1rem;
+ }
+ 
+ .description-para {
+     padding-bottom: 0.7rem;
+ }
+ 
+ .hello-jello {
+     width: 85%;
+     height: 8rem;
+ }
+ 
+ .fee-para {
+     padding: 0.8rem;
+     padding-bottom: 0.1rem;
+     padding-left: 0%;
+     font-weight: bold;
+ }
+ 
+ .service-fee-para {
+     width: 85%;
+     font-size: 0.8rem;
+     display: flex;
+     justify-content: space-between;
+ }
+ 
+ .upload-btn {
+     background: rgb(58, 124, 247);
+     padding: 0.5rem 2rem;
+     border: 1px solid black;
+     color: white;
+     font-weight: bold;
+     border-radius: 6px;
+     margin: 1.7rem;
+     margin-left: 0;
+     cursor: pointer;
+ }
+ 
+ .nft-image {
+     width: 35%;
+     padding-right: 2rem;
+     padding-left: 2rem;
+     border: 1px solid rgb(197, 194, 194);
+     /* border: 1px solid black; */
+ }
+ 
+ .nft-img-div {
+     border: 1px solid rgb(197, 194, 194);
+     margin: 1.7rem
+ }
+ 
+ .preview {
+     padding: 2rem;
+     padding-left: 0%;
+ }
+ 
+ .hack-img {
+     /* padding: 1rem; */
+     width: 100%;
+     height: 100%;
+     /* border: 1px solid black; */
+ }
+ 
+ .nft-img-desc {
+     padding-right: 1.5rem;
+ }
+ 
+ .nfterium {
+     display: flex;
+     justify-content: space-between;
+     /* padding-left: 1rem; */
+ }
+ 
+ .viit {
+     display: flex;
+     justify-content: space-between;
+     padding-right: 1.5rem;
+ }
+
 a {
      color: #1f1f1f;
      text-decoration: none !important;
@@ -177,6 +338,7 @@ img {
 
 .badge {
      font-weight: 500;
+     cursor: pointer;
 }
 
 blockquote {
@@ -225,6 +387,15 @@ button {
 
 .container {
      max-width: 1170px;
+     background-color: rgba(40, 41, 70, 0.4); 
+     color: rgba(40, 41, 70, 0.4);
+}
+
+.container-2{
+     border-bottom: 1px solid #ddd;
+     margin-top:50px;
+     border-top: 1px solid #ddd;
+     padding:50px
 }
 
 
@@ -378,12 +549,34 @@ svg.bi{
 }
 
 
+.works .blink {
+     animation: blinker 0.6s linear infinite;
+     color: #ffffff;
+     font-size: 30px;
+     font-weight: bold;
+     font-size:39px;
+     }
 
+     @keyframes blinker {  
+          50% { opacity: 0; }
+          }
+          .blink-one {
+          animation: blinker-one 1s linear infinite;
+          }
+          @keyframes blinker-one {  
+          0% { opacity: 0; }
+          }
+          .blink-two {
+          animation: blinker-two 4.4s linear infinite;
+          }
+          @keyframes blinker-two {  
+          100% { opacity: 0; }
+          }
 
 /** banner_main **/
 
 .banner_main {
-     padding-bottom: 90px;
+     padding-bottom: 20px;
      padding-top: 90px;
 }
 
@@ -514,8 +707,10 @@ svg.bi{
 }
 
 .about_border {
-     border: #ddd dashed 1px;
+     border:rgb(255, 255, 255) solid 1px;
      padding: 80px 80px;
+     background-color: rgba(40, 41, 70, 0.4); 
+     color: rgba(40, 41, 70, 0.4);
 }
 
 .about .titlepage {
@@ -528,6 +723,10 @@ svg.bi{
      max-width: 554px;
      width: 100%;
      text-align: left;
+}
+
+.about .container{
+     background-color: transparent;
 }
 
 .about_text p {
@@ -584,14 +783,227 @@ svg.bi{
 
 .img_responsive {
      max-width: 100%;
+     max-height: 1000%;
 }
 
+/* Profile-Card */
+
+.profile-card {
+     display: none;
+     z-index: 40;
+     background-color: white;
+     color: black;
+     font-family: Amiko;
+     position: fixed;
+     top: 5rem;
+     left: 72%;
+     width: 25%;
+     box-shadow: 0px 1px 2px 0px rgb(60 64 67 / 30%), 0px 2px 6px 2px rgb(60 64 67 / 15%);
+     border-radius: 8px;
+     align-items: center;
+     vertical-align: middle;
+     text-align: center;
+ }
+ 
+ .cross-div {
+      text-align: right;
+      padding-top: 1rem;
+ }
+
+ .cross-div span{
+      padding-right: 2rem;
+      font-size: 1.2rem;
+      cursor: pointer;
+ }
+
+ .circle {
+     width: 7rem;
+     height: 7rem;
+     margin: 1rem;
+     border: 1px solid black;
+     border-radius: 50%;
+ }
+ 
+ .manage-acc {
+      color: black;
+     border: 1px solid black;
+     padding: 0.5rem;
+     box-shadow: 2.9px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
+     border-radius: 2rem;
+     margin: 1rem;
+     width: auto;
+ }
+ 
+ .manage-acc:hover {
+     background-color: rgb(243, 241, 241);
+     cursor: pointer;
+ }
+ 
+ .fa-solid {
+     padding: 0rem 1rem;
+ }
+ 
+ .pay-div {
+     color: black;
+     display: flex;
+     /* padding: 1rem; */
+     align-items: center;
+ }
+
+ .pay-div p{
+      color: black;
+ }
+ 
+ .pay-div:hover {
+     background-color: rgb(243, 241, 241);
+     cursor: pointer;
+ }
+ 
+ .sign-out-div button {
+     padding: 0.6rem 2.5rem;
+     background: none;
+     background-color: none;
+     border: 1px solid black;
+     margin: 1rem;
+     border-radius: 4px;
+ }
+ 
+ .sign-out-div button:hover {
+     cursor: pointer;
+     background-color: rgb(243, 241, 241);
+ }
+ 
+ .info-div {
+     color: black;
+     /* padding: 1rem 0; */
+ }
+
+ .info-div h1{
+      color: black;
+ }
+
+ .info-div p{
+      color: black;
+ }
+
+/* pop-up-box */
+
+.pop-up-box{
+     position: fixed;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%,0);
+     padding: 3rem ;
+     padding-top: 0;
+     background-color: #f0efef;
+     border: 8px solid #acacac;
+     display: none;
+     justify-content: center;
+     align-items: center;
+     border-radius: 3rem;
+     z-index: 42;
+}
+
+.pop-up-box h1{
+     color: black;
+}
+.pop-up-box1{
+     position: fixed;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%,0);
+     padding: 3rem ;
+     padding-top: 0;
+     background-color: #f0efef;
+     border: 8px solid #acacac;
+     display: none;
+     justify-content: center;
+     align-items: center;
+     border-radius: 3rem;
+     z-index: 42;
+}
+
+.pop-up-box1 h1{
+     color: black;
+}
+.pop-up-box2{
+     position: fixed;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%,0);
+     padding: 3rem ;
+     padding-top: 0;
+     background-color: #f0efef;
+     border: 8px solid #acacac;
+     display: none;
+     justify-content: center;
+     align-items: center;
+     border-radius: 3rem;
+     z-index: 42;
+}
+
+.pop-up-box2 h1{
+     color: black;
+}
+.pop-up-box3{
+     position: fixed;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%,0);
+     padding: 3rem ;
+     padding-top: 0;
+     background-color: #f0efef;
+     border: 8px solid #acacac;
+     display: none;
+     justify-content: center;
+     align-items: center;
+     border-radius: 3rem;
+     z-index: 42;
+}
+
+.pop-up-box3 h1{
+     color: black;
+}
+.pop-up-box4{
+     position: fixed;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%,0);
+     padding: 3rem ;
+     padding-top: 0;
+     background-color: #f0efef;
+     border: 8px solid #acacac;
+     display: none;
+     justify-content: center;
+     align-items: center;
+     border-radius: 3rem;
+     z-index: 42;
+}
+
+.pop-up-box4 h1{
+     color: black;
+}
+
+.pop-up-para {
+     text-align: right;
+     padding-top: 1rem;
+     color: black;
+     font-weight: bold;
+}
+
+.pop-up-para span{
+     cursor: pointer;
+}
 
 /** graf **/
 
 .graf_tab {
      border: #989eae solid 1px;
      margin-top: 5em;
+}
+
+.graf .container{
+     background-color: transparent;
 }
 
 .graf_tab li {
@@ -649,6 +1061,8 @@ svg.bi{
 .graf_bootom {
      border-top: #6c6d6d solid 1px;
      padding-top: 40px;
+     background-color: rgba(40, 41, 70, 0.4); 
+     color: rgba(40, 41, 70, 0.4);
 }
 
 .growth {
@@ -692,7 +1106,7 @@ svg.bi{
 }
 
 .border_testi {
-     border: #fff solid 1px;
+ 
      padding: 90px 0 142px 0;
      margin: 0 40px;
 }
@@ -771,6 +1185,12 @@ svg.bi{
 /** end testimonial **/
 
 
+svg.bi{
+     margin-top:60px;
+}
+
+
+
 .banner {
      background: rgb(2,0,36);
      background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(13,52,125,1) 35%, rgba(1,12,32,1) 100%);
@@ -781,12 +1201,24 @@ svg.bi{
 
 .works {
      padding: 80px 0 90px 0;
+
 }
 
-.works_vedio figure {
-     margin: 0;
+.works_vedio{
+     margin: auto;
+     text-align: center;
+     color:#6d6c6c;  
 }
 
+.works_vedio p{
+     padding: 10px;
+     font-size: 24px;
+}
+
+.img_responsive{
+     width: 60%;
+     height: auto;
+}
 
 .art{
      background: url('https://www.forbes.com/advisor/wp-content/uploads/2021/04/NFT.jpeg.jpg') 0 0 no-repeat;
@@ -916,6 +1348,15 @@ svg.bi{
      padding-top: 90px
 }
 
+.foooter{
+     border-top:rgb(255, 255, 255) solid 1px;
+     margin-top:30px;
+}
+
+.footer .container{
+     background-color: transparent;
+}
+
 .logo_bottom {
      font-weight: bold;
      font-size: 51px;
@@ -923,6 +1364,7 @@ svg.bi{
      line-height: 55px;
      margin-bottom: 40px;
      display: block;
+     margin-top: 55px;
 }
 
 .Informa h3 {
@@ -981,6 +1423,10 @@ svg.bi{
      margin-bottom: 20px;
 }
 
+.footer li{
+     padding: 4px;
+}
+
 .subs_btn {
      max-width: 191px;
      display: inline-block;
@@ -1031,7 +1477,7 @@ svg.bi{
      margin-top: 90px;
 }
 #article{
-     color: white;
+     color: rgb(1, 141, 255);
 /* kash */
      font-size: 28px;
 }
@@ -1040,8 +1486,6 @@ svg.bi{
 }
 #para{
      font-size: 23px;
-}
-
      size: 50px;
 }
 
@@ -1258,4 +1702,7 @@ svg.bi{
    .cm-msg-button {
        clear: both;
        margin-bottom: 70px;
+   }
+   #news{
+        color:white
    }
